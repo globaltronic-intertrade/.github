@@ -1,0 +1,11 @@
+{
+  "name": "dotgithub",
+  "private": true,
+  "scripts": {
+    "verify": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

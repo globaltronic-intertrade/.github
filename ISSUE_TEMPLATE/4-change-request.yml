@@ -1,0 +1,42 @@
+name: ขอเปลี่ยนขอบเขต (Change Request)
+description: ลูกค้าขอเปลี่ยนสิ่งที่ตกลงไว้ใน SRS หลังเซ็นรับแล้ว
+title: "(ชื่อโปรเจกต์) CR-NNN "
+type: Task
+projects: ["globaltronic-intertrade/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **ไม่มี CR ที่ลูกค้าอนุมัติ = ยังไม่ลงมือแก้** · เปิดเป็น sub-issue ของ Epic · รายละเอียดเต็มเขียนใน `docs/cr/cr-NNN-<ชื่อสั้น>.md` และใบที่ลูกค้าเซ็นเก็บใน Drive `07 Change Request/` · ผลต่อราคาให้อ้างใบเสนอราคา rev ใหม่ ไม่ใส่ตัวเลขใน issue
+  - type: input
+    id: requester
+    attributes:
+      label: ผู้ขอ
+      description: ตำแหน่ง / ฝ่ายของลูกค้า
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: เปลี่ยนอะไร และเพราะอะไร
+    validations:
+      required: true
+  - type: input
+    id: reqs
+    attributes:
+      label: REQ ที่กระทบ
+      description: เช่น REQ-003, REQ-007
+  - type: textarea
+    id: impact
+    attributes:
+      label: ผลต่อเวลาและราคา
+  - type: dropdown
+    id: status
+    attributes:
+      label: สถานะ
+      options:
+        - รออนุมัติ
+        - อนุมัติแล้ว
+        - ไม่อนุมัติ
+    validations:
+      required: true

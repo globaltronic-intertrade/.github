@@ -1,0 +1,40 @@
+name: ออกหน้างาน (On-site)
+description: สำรวจ ติดตั้ง หรือซ่อมบำรุงที่หน้างานลูกค้า บันทึกผลและรูปหลังกลับ
+title: "(ชื่อโปรเจกต์) ออกหน้างาน YYYY-MM-DD "
+type: Task
+projects: ["globaltronic-intertrade/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        รูปและค่าที่วัดจำนวนมากเก็บใน Drive `03 หน้างาน/YYYY-MM-DD <งาน>/` · ถ้าเป็นการสำรวจ ให้เขียนรายงานใน `docs/site-survey/ssr-YYYY-MM-DD.md` ด้วย
+  - type: dropdown
+    id: kind
+    attributes:
+      label: ประเภท
+      options:
+        - สำรวจหน้างาน
+        - ติดตั้ง
+        - ซ่อมบำรุง (Maintenance)
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: สถานที่
+      description: ชื่อสถานที่หรือจุดติดตั้ง
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: สิ่งที่ต้องทำ / ของที่ต้องเตรียม
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: ผล (กรอกหลังกลับ)
+      description: สิ่งที่พบ · สิ่งที่ทำแล้ว · งานที่ต้องทำต่อ · ลิงก์โฟลเดอร์รูปใน Drive

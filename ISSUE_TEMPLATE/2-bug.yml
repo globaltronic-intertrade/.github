@@ -1,0 +1,31 @@
+name: ระบบทำงานผิด (Bug)
+description: ระบบหรืออุปกรณ์ทำงานไม่ตรงกับที่ควรเป็น รวมถึงปัญหาหลังส่งมอบ (Maintenance)
+title: "(ชื่อโปรเจกต์) "
+type: Bug
+projects: ["globaltronic-intertrade/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ปัญหาหลังส่งมอบ: ไม่ต้องผูกกับ Epic เดิม แต่ตั้ง field **Customer** ในการ์ดของ board · ห้ามใส่รหัสผ่านหรือ IP ภายในโรงงาน
+  - type: textarea
+    id: what
+    attributes:
+      label: เกิดอะไรขึ้น
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: ทำซ้ำได้อย่างไร
+      value: |
+        1.
+  - type: textarea
+    id: expected
+    attributes:
+      label: ควรเป็นอย่างไร
+  - type: input
+    id: where
+    attributes:
+      label: ที่ไหน / เวอร์ชัน
+      description: หน้างาน · อุปกรณ์ · เวอร์ชันหรือ release ที่ใช้อยู่

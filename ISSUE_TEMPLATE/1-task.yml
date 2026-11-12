@@ -1,0 +1,23 @@
+name: งานทั่วไป (Task)
+description: งาน 1 ชิ้น มีคนทำ 1 คน ทำจบได้ใน 1 sprint
+title: "(ชื่อโปรเจกต์) "
+type: Task
+projects: ["globaltronic-intertrade/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ชื่อแบบ `(ชื่อโปรเจกต์) ทำอะไร` · เปิดแล้วตั้ง Priority · Estimate · Sprint · Customer ในการ์ดของ board · ถ้าเป็นงานของดีลลูกค้า ให้เปิดเป็น sub-issue จาก Epic
+  - type: textarea
+    id: detail
+    attributes:
+      label: รายละเอียด
+      value: |
+        ทำอะไร / ใครขอ:
+
+        เสร็จแล้วต้องได้:
+        - [ ]
+
+        ลิงก์:
+    validations:
+      required: true
