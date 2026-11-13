@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ปัญหาหลังส่งมอบ: ไม่ต้องผูกกับ Epic เดิม แต่ตั้ง field **Customer** ในการ์ดของ board · ห้ามใส่รหัสผ่านหรือ IP ภายในโรงงาน
+        ปัญหาหลังส่งมอบ: ไม่ต้องผูกกับ Epic เดิม (repo บอกอยู่แล้วว่าเป็นระบบของลูกค้ารายไหน) · ห้ามใส่รหัสผ่านหรือ IP ภายในโรงงาน
   - type: textarea
     id: what
     attributes:
